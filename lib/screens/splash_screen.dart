@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen>
         style: TextStyle(
           fontWeight: FontWeight.w500,
           color: Colors.blue,
-          fontSize: 20 * animation.value + 28,
+          fontSize: 30 * animation.value,
         ),
       )),
     );
