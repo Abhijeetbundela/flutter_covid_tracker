@@ -20,23 +20,18 @@ class GlobalListTile extends StatelessWidget {
               vertical: height * 0.02, horizontal: width * 0.04),
           width: width,
           height: height * 0.14,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Text("Total $infoHeader",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: height * 0.025)),
-                  Text(caseInfo,
-                      style: TextStyle(
-                          color: Colors.white, fontSize: height * 0.025))
-                ],
-              ),
+              Text("Total $infoHeader",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22)),
+              Text(caseInfo,
+                  style: TextStyle(
+                      color: Colors.white, fontSize: 18))
             ],
           )),
     );

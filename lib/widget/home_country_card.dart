@@ -33,7 +33,7 @@ class HomeCountryCard extends StatelessWidget {
               style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontSize: 18),
+                  fontSize: 20),
             ),
             SizedBox(
               height: 8,
@@ -42,7 +42,7 @@ class HomeCountryCard extends StatelessWidget {
               '${formatter.format(caseCount)}',
               style: TextStyle(
                   color: Colors.white,
-                  fontSize: 14),
+                  fontSize: 16),
             )
           ],
         ),

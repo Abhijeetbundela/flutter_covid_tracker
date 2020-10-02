@@ -67,19 +67,17 @@ class DetailCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
-
     return Card(
       child: Container(
         padding: EdgeInsets.all(5.0),
         child: ListTile(
           title: Text(
             '${formatter.format(info)}',
-            style: TextStyle(fontSize: height * 0.04),
+            style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
           ),
           subtitle: Text(
             heading,
-            style: TextStyle(fontSize: height * 0.02),
+            style: TextStyle(fontSize: 18),
           ),
         ),
       ),
@@ -97,7 +95,6 @@ class AppBarDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
     return Container(
       child: Center(
         child: Stack(
@@ -106,11 +103,10 @@ class AppBarDetail extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text("Total Cases",
-                    style: TextStyle(
-                        fontSize: height * 0.027, color: Colors.white)),
+                    style: TextStyle(fontSize: 34, color: Colors.white)),
                 Text("${formatter.format(casesInfo)}",
                     style: TextStyle(
-                        fontSize: height * 0.05,
+                        fontSize: 28,
                         fontWeight: FontWeight.bold,
                         color: Colors.white)),
               ],
